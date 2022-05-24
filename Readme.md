@@ -218,7 +218,7 @@ void loop() {
 		~/Documents/Arduino/libraries/IoTMakers
 
 ### 4.4 아두이노/IoTMakers 연결: IoTMakersDemo 실행
-1. [IoTMakersDemoMKR1010](release/IoTMakersDemoMKR1010.zip)을 다운로드하여 Arduino IDE에서 실행한다.
+1. [IoTMakersDemoMKR1010](https://github.com/kwanulee/IoTMakersDemo4Arduino.git)을 다운로드하여 Arduino IDE에서 실행한다.
 
 2.  소스코드에서 다음을 찾아 사용 환경에 맞도록 수정후, 빌드/업로드 한다.
 
