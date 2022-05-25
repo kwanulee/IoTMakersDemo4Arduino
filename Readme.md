@@ -7,7 +7,6 @@
 - [3. 아두이노 MKR WIFI1010에서 WIFI 테스트](#3)
 - [4. IoTMakers와 아두이노 연동](#4)
 - [5. IoTMakers를 통해 규칙에 의한 아두이노 LED on/off 제어하기](#5)
-- [6. 실습](#6)
 
 ## 준비사항
 
@@ -80,7 +79,7 @@
 		![](figures/install-library.png)
 
 ### 2.4 DHTTester 예제
-- 앞서 언급한 DHT sensor library를 설치한 후, **[파일]-[예제]-[DHT sensor library]-[DHTTest.ino]**을 열어 **DHT-11** 센서를 테스트 할 수 있다.
+- 앞서 언급한 DHT sensor library를 설치한 후, [**파일**]-[**예제**]-[**DHT sensor library**]-[**DHTTest.ino**]을 열어 **DHT-11** 센서를 테스트 할 수 있다.
 - [**주의**] **DHTTest.ino** 예제에서 **#define DHTTYPE DHT11**의 주석을 풀고, **#define DHTTYPE DHT22** 부분을 주석처리 해야 함.
 
 	```
@@ -147,10 +146,10 @@ void loop() {
 	![](figures/dht-11_result.png)
 
 <a name="3"></a>
-## 3. 아두이노 MKR WIFI1010에서 WIFI 테스트
+## 3. 아두이노 MKRWIFI1010에서 WIFI 테스트
 ### 3.1 **WIFININA** 라이브러리 추가
-- MKR WIFI 1010에서 WiFi를 사용하기 위해서는 **WIFININA** 라이브러리가 추가되어야 한다.
-	- **Arduino IDE**의 **[스케치]-[라이브러리 포함하기]-[라이브러리 관리]** 메뉴를 선택
+- **MKRWIFI1010**에서 WiFi를 사용하기 위해서는 **WIFININA** 라이브러리가 추가되어야 한다.
+	- **Arduino IDE**의 [**스케치**]-[**라이브러리 포함하기**]-[**라이브러리 관리**] 메뉴를 선택
 	- 라이브러리 매니저의 검색창에 **WIFININA**를 입력하여 검색된 **WIFININA** 라이브러리를 설치
 
 
@@ -171,14 +170,14 @@ void loop() {
 ![](figures/arduino-dht11-led.png)
 
 1. LED 제어 배선
-	- **아두이노 MKR1010**의 **GND**를 **LED 음극**(캐소드, 짧은 단자)에 연결
+	- **아두이노 MKRWIFI1010**의 **GND**를 **LED 음극**(캐소드, 짧은 단자)에 연결
 	- **LED 양극**(애노드, 긴 단자)을 **저항 (330~1K 옴)**에 연결
 	- 저항의 나머지 한 끝을 **아두이노 MKR1010**의 디지털입출력핀 **D5** 연결
 
 2. DHT-11 온습도 센서
-	- **아두이노 MKR1010**의 **5V**를 **DHT-11**의 **VCC** 핀과 연결
-	- **아두이노 MKR1010**의 **D2** (디지털입출력핀 2)를 **DHT-11**의 **Data** 핀과 연결
-	- **아두이노 MKR1010**의 **GND**를 **DHT-11**의 **GND** 핀과 연결
+	- **아두이노 MKRWIFI1010**의 **5V**를 **DHT-11**의 **VCC** 핀과 연결
+	- **아두이노 MKRWIFI1010**의 **D2** (디지털입출력핀 2)를 **DHT-11**의 **Data** 핀과 연결
+	- **아두이노 MKRWIFI1010**의 **GND**를 **DHT-11**의 **GND** 핀과 연결
 
 ### 4.2 아두이노/IoTMakers 연결: 디바이스 등록
 1. 실습을 위한 준비를 마쳤다면 IoTMakers에 접속해서 디바이스를 등록해보자.
@@ -218,7 +217,7 @@ void loop() {
 		~/Documents/Arduino/libraries/IoTMakers
 
 ### 4.4 아두이노/IoTMakers 연결: IoTMakersDemo 실행
-1. [IoTMakersDemoMKR1010](https://github.com/kwanulee/IoTMakersDemo4Arduino.git)을 다운로드하여 Arduino IDE에서 실행한다.
+1. [IoTMakersDemo4Arduino](https://github.com/kwanulee/IoTMakersDemo4Arduino/archive/refs/heads/main.zip)을 다운로드하여 Arduino IDE에서 실행한다.
 
 2.  소스코드에서 다음을 찾아 사용 환경에 맞도록 수정후, 빌드/업로드 한다.
 
