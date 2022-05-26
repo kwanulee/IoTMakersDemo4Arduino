@@ -25,8 +25,8 @@ void init_shield()
 {
 	sdcard_deselect();
 	
-	const char* WIFI_SSID = "AndroidHotspot9328";
-	const char* WIFI_PASS = "027605864";
+	const char* WIFI_SSID = "SECRET_SSID";
+  const char* WIFI_PASS = "SECRET_PASS";
 	g_shield.begin(WIFI_SSID, WIFI_PASS);
 
 	g_shield.print();
@@ -38,9 +38,9 @@ IoTMakers
 */
 IoTMakers g_im;
 
-const char deviceID[]   = "kwanu7D1630827948677";
-const char authnRqtNo[] = "hldfwk8g0";
-const char extrSysID[]  = "OPEN_TCP_001PTL001_1000003350";
+const char deviceID[]   = "XXXXXXXX458541656289";
+const char authnRqtNo[] = "XXXXXXX2t";
+const char extrSysID[]  = "OPEN_TCP_001PTL001_1000XXXXXX";
 
 void init_iotmakers()
 {
