@@ -215,6 +215,9 @@ void loop() {
 	- Ununtu
 
 		~/Documents/Arduino/libraries/IoTMakers
+- [**주의**] https://iotmakers.kt.com/openp/assets/files/SDK_Arduino_2.0.1.zip 에 있는 Arduino SDK를 최신버전의 Arduino IDE 2.0 및 MKRWiFi1010 보드에서 컴파일하면 컴파일 오류가 발생합니다. 이를 해결하기 위해서는 src/packet 하위의 body.c와 head.c 파일을 열고 상단에 #include \<avr/pgmspace.h\> 를 추가하면 된다.
+
+다음 첨부된 Arduino SDK는 이를 수정한 버전이니,  zip 파일을 풀어 생성된 IoTMakers 폴더를 기존에 설치된 IoTMakers 폴더와 대체하면 됩니다. 
 
 ### 4.4 아두이노/IoTMakers 연결: IoTMakersDemo 실행
 1. [IoTMakersDemo4Arduino](https://github.com/kwanulee/IoTMakersDemo4Arduino/archive/refs/heads/main.zip)을 다운로드하여 Arduino IDE에서 실행한다.
